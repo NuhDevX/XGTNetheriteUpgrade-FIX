@@ -65,7 +65,6 @@ class NetheriteManager
 
         $netheriteIngot->pop();
 
-        $netheriteItem->setDamage($diamondItem->getDamage());
         $netheriteItem->setCustomName("§b" . $netheriteItem->getVanillaName());
         $netheriteItem->setLore($diamondItem->getLore());
 

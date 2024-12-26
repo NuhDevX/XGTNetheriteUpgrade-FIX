@@ -15,16 +15,15 @@
 
 namespace XGDAVID\Netherite\events;
 
-use AllowDynamicProperties;
 use pocketmine\event\inventory\InventoryTransactionEvent;
 use pocketmine\event\Listener;
 use pocketmine\inventory\transaction\action\SlotChangeAction;
 use pocketmine\item\VanillaItems;
 use XGDAVID\Netherite\NetheriteManager;
 
-#[AllowDynamicProperties] class NetheriteEvents implements Listener
+class NetheriteEvents implements Listener
 {
-
+   private NetheriteManager $manager;
 
     public function __construct(NetheriteManager $manager)
     {
